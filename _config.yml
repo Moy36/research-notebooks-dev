@@ -14,7 +14,7 @@ description: >
 remote_theme: ELIXIR-Belgium/elixir-toolkit-theme@6.0.0
 
 plugins:
-  
+  - jekyll-feed 
   - jekyll-redirect-from
   - jekyll-seo-tag
   - jekyll-sitemap
