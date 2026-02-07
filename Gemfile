@@ -8,6 +8,7 @@ gem "kramdown-parser-gfm", "~> 1.1"
 gem "csv"
 
 group :jekyll_plugins do
+  gem "jekyll-feed", "~> 0.17"
   gem "jekyll-redirect-from", "~> 0.16.0"
   gem "jekyll-sitemap", "~> 1.4"
   gem "jekyll-github-metadata", "~> 2.16.0"
