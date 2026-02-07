@@ -11,7 +11,7 @@ description: >
 
 # Build settings
 #Following advice to quote specific git ref (portion following the @) when using remote_theme. This is relevant as the main branch of minima (Minima 3.0) is still in active development. The particular commit is from 27 Feb '25.
-remote_theme: ELIXIR-Belgium/elixir-toolkit-theme@5.0.0
+remote_theme: ELIXIR-Belgium/elixir-toolkit-theme@6.0.0
 
 plugins:
   - elixir-toolkit-theme-plugins
