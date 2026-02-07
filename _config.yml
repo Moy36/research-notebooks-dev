@@ -1,10 +1,13 @@
+remote_theme: ELIXIR-Belgium/elixir-toolkit-theme@6.0.0
+
 title: Research Notebooks
 # This appears in the html browser tab for the site title (seen mostly by search engines, not users)
 
 topnav_title: Research Notebooks
 # Optional: this appears on the top navigation bar next to the main_logo.svg icon
 
-baseurl: /hahaha
+
+baseurl: /research-notebooks-dev
 
 # topnav_banner: "ELIXIR toolkit theme is currently under development and may change at any point - it is not meant for production use"
 # Optional: a banner message to display to users on all pages
