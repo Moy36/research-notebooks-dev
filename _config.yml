@@ -14,8 +14,13 @@ description: >
 remote_theme: ELIXIR-Belgium/elixir-toolkit-theme@5.0.0
 
 plugins:
-  - jekyll-feed
+  - elixir-toolkit-theme-plugins
+  - jekyll-redirect-from
   - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-github-metadata
+  - jemoji
+  - webrick
 
 #Added plots folder (with underscore prefix) to the collection of files to be processed by Jekyll.
 collections:
