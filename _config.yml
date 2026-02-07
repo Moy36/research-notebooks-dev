@@ -28,43 +28,50 @@ collections:
     output: true #Required to generate resultant page in accordance with front matter.
     permalink: /:collection/:name #Define permalink for the collection of plots rather than globally.
 
-# Minima specific settings, which are only available from Minima 3.0 onward.
-minima:
-  # Minima skin selection.
-  # Available skins are:
-  # classic	           Default, light color scheme.
-  # dark	             Dark variant of the classic skin.
-  # auto	             Adaptive skin based on the default classic and dark skins.
-  # solarized-light	   Light variant of solarized color scheme.
-  # solarized-dark	   Dark variant of solarized color scheme.
-  # solarized	         Adaptive skin for solarized color scheme skins.
-  skin: auto
+theme_variables:
+  # git_host: GitHub
+  # back_to_top: true
+  # dev-info-banner: false
+  # privacy_statement_url: /privacy
+  # github_buttons:
+    # position: top
+    # edit_me: true
+    # open_issue: true
+    # history: true
+  # datatables:
+    # searchbuilder: false
+    # pagelength: 10
+  # headings:
+    # related-pages: Related pages
+    # more-information-tiles: More information
+    # resource-table-all: Tools and resources on this page
+    # resource-table-all-collapse: false
+  # page_metadata:
+    # contributors_sort: true
+    # coordinators_sort: true
+    # editors_sort: true
+    # affiliations_sort: true
+  # toc:
+    # min_headings: 1
+    # headings: 'h2'
+  # topnav:
+    # theme: light
+    # brand_logo: assets/img/main_logo.svg
+    # search: true
+    # github: true
+    # twitter: false
+    # bluesky: false
+    # linkedin: false
+    # fosstodon: false
+  # theme_color: 0d6efd
+  # fonts:
+    # - url towards a font
+  # breadcrumb: false
 
-  # If you want to link only specific pages in the site-navigation, use this and list
-  # the `path` property (as represented via Liquid) of the pages in the order they should
-  # be rendered.
-  #nav_pages:
-  #  - about.md
+# --- Missing in gitlab: ---
+# github:
+  # repository_url: https://github.com/ELIXIR-Belgium/elixir-toolkit-theme
+  # source:
+    # branch: main
+ 
 
-  # Set to `true` to show excerpts on the homepage.
-  #show_excerpts: false
-
-  # Minima date format.
-  # The default value is "%b %d, %Y" (e.g. Nov 14, 2023) 
-  # Refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this.
-  #date_format: "%b-%d-%Y"
-
-  # Social Media Links
-  # Renders icons via Font Awesome Free webfonts CDN, based on ordered list of entries.
-  #
-  # Entry keys:
-  # * title    Tooltip rendered on hovering over icon.
-  # * icon     Font Awesome icon id. `github` corresponds to `fa-github`.
-  # * url      Full URL of social profile.
-  social_links:
-    - title: Oiseau Lab
-      icon: github
-      url: "https://github.com/oiseau-lab"
-  #  - title: Jekyll at X (formerly Twitter)
-  #    icon: x-twitter
-  #    url: "https://x.com/jekyllrb"
