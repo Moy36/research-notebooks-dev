@@ -1,17 +1,55 @@
 title: Research Notebooks
-author:
-  name: James R.T. Bird & Qingyi 'Moy' Mao
-  email: james.bird@manchester.ac.uk
+# This appears in the html browser tab for the site title (seen mostly by search engines, not users)
 
+topnav_title: Research Notebooks
+# Optional: this appears on the top navigation bar next to the main_logo.svg icon
 
-# The `>` after `description:` means to ignore line-breaks until next key.
-# If you want to omit the line-break after the end of text, use `>-` instead.
-description: >
-  Electronic Research Notebooks (ERNs) at Manchester has been set up, in the first instance, to share interative .html plots with researchers and research-supporting staff at the University, which graphically depict features of ERNs.
+baseurl: /hahaha
 
-# Build settings
-#Following advice to quote specific git ref (portion following the @) when using remote_theme. This is relevant as the main branch of minima (Minima 3.0) is still in active development. The particular commit is from 27 Feb '25.
-remote_theme: ELIXIR-Belgium/elixir-toolkit-theme@6.0.0
+# topnav_banner: "ELIXIR toolkit theme is currently under development and may change at any point - it is not meant for production use"
+# Optional: a banner message to display to users on all pages
+
+description: "Electronic Research Notebooks (ERNs) at Manchester has been set up, in the first instance, to share interative .html plots with researchers and research-supporting staff at the University, which graphically depict features of ERNs."
+# Metadata description of the website
+
+#dsw_deep_link_prefix:
+# prefix for DSW deep links to a certain question
+
+gtag:
+# Google analytics tag
+
+#matomo:
+# Matomo domain where Matomo is running
+#matomo_id:
+# Integer indicating the Matomo Website ID
+# matomo_cookies: true
+# Boolean that determines whether a Matomo tracking cookie is used or not
+
+#plausible:
+# Plausible tag
+#plausible_src:
+# default: 'https://plausible.io/js/plausible.js
+
+exclude:
+  - .gitignore
+  - var/
+  - vendor
+  - Gemfile*
+  - LICENSE
+
+sass:
+    style: compressed
+
+defaults:
+# Define here page metadata attributes for all pages at once or on specific directories. More information: https://jekyllrb.com/docs/configuration/front-matter-defaults/
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      permalink: /:basename
+      layout: "page"
+      sidebar: main
 
 plugins:
   - elixir-toolkit-theme-plugins
@@ -22,11 +60,6 @@ plugins:
   - jemoji
   - webrick
 
-#Added plots folder (with underscore prefix) to the collection of files to be processed by Jekyll.
-collections:
-  plots:
-    output: true #Required to generate resultant page in accordance with front matter.
-    permalink: /:collection/:name #Define permalink for the collection of plots rather than globally.
 
 theme_variables:
   # git_host: GitHub
@@ -73,5 +106,3 @@ theme_variables:
   # repository_url: https://github.com/ELIXIR-Belgium/elixir-toolkit-theme
   # source:
     # branch: main
- 
-

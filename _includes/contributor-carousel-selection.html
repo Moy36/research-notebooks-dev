@@ -1,0 +1,74 @@
+{%- assign carousel_counter = carousel_counter | plus: 1 %}
+{%- assign contributors_lookup = site.data.CONTRIBUTORS %}
+{%- assign allcontrstr = nil %}
+{%- assign nr = include.col | default: 4 %}
+{%- if include.custom %}
+{%- assign allcontrstr = include.custom %}
+{%- elsif include.role %}
+{%- assign rolefilter =  include.role | downcase %}
+{%- for contr in contributors_lookup %}
+{%- assign contrrole = contr[1]['role'] | downcase %}
+{%- if rolefilter == contrrole %}
+{%- if allcontrstr %}
+{%- assign allcontrstr = allcontrstr | append: ", " | append: contr[0] %}
+{%- else %}
+{%- assign allcontrstr = contr[0] %}
+{%- endif %}
+{%- endif %}
+{%- endfor %}
+{%- else %}
+{%- for page in site.pages %}
+{%- if page.contributors and page.search_exclude != true and page.contributors.size != 0 %}
+{%- assign pagecontr = page.contributors | join: ", " %}
+{%- if allcontrstr %}
+{%- assign allcontrstr = allcontrstr | append: ", " | append: pagecontr %}
+{%- else %}
+{%- assign allcontrstr = pagecontr %}
+{%- endif %}
+{%- endif %}
+{%- endfor %}
+{%- for contr in contributors_lookup %}
+{%- if allcontrstr %}
+{%- assign allcontrstr = allcontrstr | append: ", " | append: contr[0] %}
+{%- else %}
+{%- assign allcontrstr = contr[0] %}
+{%- endif %}
+{%- endfor %}
+{%- endif %}
+{%- assign allcontributors = allcontrstr | split: ", " | uniq %}
+{%- unless include.sort == false %}
+{%- assign allcontributors = allcontributors | sort %}
+{%- endunless %}
+{%- unless allcontributors.size == 0 %}
+<div class="position-relative">
+<div id="contributors-carousel-{{carousel_counter}}" class="carousel carousel-dark slide my-4" data-ride="carousel" data-bs-interval="7000">
+    <div class="carousel-inner">
+        {%- assign counter = 0 %}
+        {%- for contributor_name in allcontributors %}
+        {%- if modulo == '0' or counter == 0 %}
+        <div class="carousel-item {% if counter == 0 %}active{% endif %}">
+            <div class="row row-cols-{{nr}} contributor-cards g-1 g-xl-4 ">
+        {%- endif %}
+        {%- assign data = contributors_lookup[contributor_name] %}
+                <div class="col">
+                    {%- include contributor-card.html name=contributor_name image_url=data.image_url git=data.git email=data.email orcid=data.orcid role=data.role affiliation=data.affiliation %}
+                </div>
+        {%- assign counter = counter | plus:1 %}
+        {%- capture modulo %}{{ counter | modulo:nr }}{% endcapture %}
+        {%- if forloop.last or modulo == '0' and counter != 0  %}
+            </div>
+        </div>
+        {%- endif %}
+        {%- endfor %}
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#contributors-carousel-{{carousel_counter}}" data-bs-slide="prev" style="width: 2rem; margin-left: -1rem; bottom: auto; height: 3rem;">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#contributors-carousel-{{carousel_counter}}" data-bs-slide="next" style="width: 2rem; margin-right: -1rem; bottom: auto; height: 3rem;">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+</div>
+{%- endunless %}

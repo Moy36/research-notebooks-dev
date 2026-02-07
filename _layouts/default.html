@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+{% include head.html %}
+<body class=""{% if page.toc or page.toc == nil %} data-bs-spy="scroll" data-bs-target="#toc-contents" data-bs-smooth-scroll="true" tabindex="0"{% endif %}>
+    {% if site.topnav_banner %}{% include banner.html %}{% endif %}
+    {% if jekyll.environment == "development" and site.theme_variables.dev-info-banner == true %}{% include dev-info.html %}{% endif %}
+    {% include topnav.html search=site.theme_variables.topnav.search %}
+    <!-- Page Content -->
+    <div class="container g-lg-5">
+        <!-- Content Row -->
+        <div {% if page.sidebar %}id="layout" class="gap-5"{% endif %}>
+            <!-- Sidebar -->
+            {%- if page.sidebar%}
+            <aside id="sidebar">
+                {% include sidebar.html %}
+            </aside>
+            {%- endif %}
+            <!-- Content -->
+            {{content}}
+        </div>
+    </div>
+    {% include scroll-top.html %}
+    {% include footer.html %}
+    {% include cookie-popup.html %}
+</body>
+</html>
