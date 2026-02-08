@@ -5,9 +5,7 @@ sidebar: main
 permalink: /engagement
 ---
 
-This page lists the stakeholders' engagement for functional requirments in the Research Notebooks project.
-
-{% for plot in site.data.plots %}
+{% for plot in site.data.stakeholder-mapplots %}
 ## {{ plot }}
 
 <iframe 
@@ -19,3 +17,4 @@ This page lists the stakeholders' engagement for functional requirments in the R
 
 ---
 {% endfor %}
+
