@@ -15,7 +15,7 @@ This page lists the attribute definitions used in the Research Notebooks project
     style="border:none;">
 </iframe>
 
-## Attribute List
+## Attribute Table
 
 
 <table>
