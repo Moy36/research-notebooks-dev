@@ -8,7 +8,12 @@ permalink: /ern-attributes
 This page lists the attribute definitions used in the Research Notebooks project.
 
 ## Main FRs Score Plot
-<iframe src="https://oiseau-lab.github.io/research-notebooks-dev/plots/anteater" width="100%" height="600" style="border:none;"> </iframe>
+<iframe 
+    src="/research-notebooks-dev/assets/functional-requirements.html"
+    width="100%"
+    height="600"
+    style="border:none;">
+</iframe>
 
 ## Attribute List
 
