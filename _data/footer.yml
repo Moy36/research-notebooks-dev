@@ -4,8 +4,8 @@ columns:
   - type: image
     image_width: 150px
     width: 2
-    src: 'images/infrastructures/ELIXIR_BELGIUM_white_background.svg'
-    alt: ELIXIR Belgium logo
+    src: 'images/infrastructures/project-theme-logo.svg'
+    alt: project theme logo
   - type: links
     title: Title
     width: 3
