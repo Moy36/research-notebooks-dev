@@ -1,5 +1,5 @@
 ---
-title: ERN Attribute Definition
+title: ERN Attribute Overview
 layout: page
 sidebar: main
 permalink: /ern-attributes
