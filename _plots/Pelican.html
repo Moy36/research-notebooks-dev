@@ -18,7 +18,35 @@ title: Pelican
 <link rel="preload" href="https://fonts.gstatic.com/s/roboto/v50/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuYjalmUiA8.ttf" as="font" crossorigin="anonymous" type="font/ttf" />
 <link rel="preload" href="https://fonts.gstatic.com/s/roboto/v50/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuZtalmUiA8.ttf" as="font" crossorigin="anonymous" type="font/ttf" />
 <style>
-b"@font-face {\n  font-family: 'Roboto';\n  font-style: normal;\n  font-weight: 300;\n  font-stretch: normal;\n  src: url(https://fonts.gstatic.com/s/roboto/v50/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuaabVmUiA8.ttf) format('truetype');\n}\n@font-face {\n  font-family: 'Roboto';\n  font-style: normal;\n  font-weight: 400;\n  font-stretch: normal;\n  src: url(https://fonts.gstatic.com/s/roboto/v50/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmUiA8.ttf) format('truetype');\n}\n@font-face {\n  font-family: 'Roboto';\n  font-style: normal;\n  font-weight: 700;\n  font-stretch: normal;\n  src: url(https://fonts.gstatic.com/s/roboto/v50/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuYjalmUiA8.ttf) format('truetype');\n}\n@font-face {\n  font-family: 'Roboto';\n  font-style: normal;\n  font-weight: 900;\n  font-stretch: normal;\n  src: url(https://fonts.gstatic.com/s/roboto/v50/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuZtalmUiA8.ttf) format('truetype');\n}\n"
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/roboto/v50/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuaabVmUiA8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/roboto/v50/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmUiA8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/roboto/v50/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuYjalmUiA8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/roboto/v50/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuZtalmUiA8.ttf) format('truetype');
+}
+
 </style>
 
     <link
@@ -30,12 +58,10 @@ b"@font-face {\n  font-family: 'Roboto';\n  font-style: normal;\n  font-weight: 
       rel="stylesheet"
     />
     
-    <script src="https://unpkg.com/deck.gl@latest/dist.min.js"></script>
     <script src="https://unpkg.com/apache-arrow@latest/Arrow.es2015.min.js"></script>
+    <script src="https://unpkg.com/deck.gl@latest/dist.min.js"></script>
     <style>
-      .content-wrapper{top:0;left:0;width:100%;height:100%;z-index:1;padding:0;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;min-height:calc(100vh - 16px);pointer-events:none}.stack{display:flex;flex-direction:column;gap:0;padding:0;pointer-events:none;max-height:50vh;overflow-y:visible}.top-left{grid-column:1;grid-row:1;justify-self:start;align-self:start;align-items:start}.bottom-left{grid-column:1;grid-row:2;justify-self:start;align-self:end;align-items:start;display:flex;flex-direction:column-reverse;transform:scaleY(-1);z-index:2}.top-right{grid-column:2;grid-row:1;justify-self:end;justify-items:end;align-self:start;align-items:end}.bottom-right{grid-column:2;grid-row:2;justify-self:end;justify-items:end;align-self:end;align-items:end;display:flex;flex-direction:column-reverse;transform:scaleY(-1)}.stack.bottom-left .stack-box{transform:scaleY(-1)}.stack.bottom-right .stack-box{transform:scaleY(-1)}#loading{width:100%;height:100%;top:0px;left:0px;position:absolute;display:block;z-index:99}#loading-image{position:absolute;top:45%;left:47.5%;z-index:100}#title-container{top:0;left:0}
-    </style><style>
-      .datamapplot-progress-container{position:absolute;bottom:0;left:50%;transform:translate(-50%,0);width:512px;z-index:101}.datamapplot-progress-bar{width:100%;background-color:#e0e0e044;padding:3px;border-radius:6px;box-shadow:inset 0 1px 3px rgba(128,128,128,.2);margin-bottom:10px}.datamapplot-progress-bar-fill{display:block;height:12px;background-color:#659cef;border-radius:4px;transition:width 500ms ease-in-out}.datamapplot-progress-bar-text{color:white;text-align:center;line-height:12px;font-size:10px;overflow-x:visible;white-space:nowrap;vertical-align:top}
+      .datamapplot-progress-container{position:absolute;bottom:0;left:50%;transform:translate(-50%,0);width:512px;z-index:100}.datamapplot-progress-bar{width:100%;background-color:#e0e0e044;padding:3px;border-radius:6px;box-shadow:inset 0 1px 3px rgba(128,128,128,.2);margin-bottom:10px}.datamapplot-progress-bar-fill{display:block;height:12px;background-color:#659cef;border-radius:4px;transition:width 500ms ease-in-out}.datamapplot-progress-bar-text{color:white;text-align:center;line-height:12px;font-size:10px;overflow-x:visible;white-space:nowrap;vertical-align:top}
     </style>
     <style>
       body {
@@ -47,26 +73,20 @@ b"@font-face {\n  font-family: 'Roboto';\n  font-style: normal;\n  font-weight: 
         color: #ffffff;
       }
       .container-box {
-        margin: 8px 16px 8px 16px;
+        margin: 4px;
         padding: 12px;
         border-radius: 16px;
         line-height: 0.95;
-        width: fit-content;
-        height: fit-content;
         z-index: 2;
-        backdrop-filter: blur(3px);
         background: #000000aa;
         box-shadow: 2px 3px 10px #00000044;
-        position: relative;
-        pointer-events: auto;
       }
       .more-opaque {
-        backdrop-filter: blur(6px);
         background-color: #000000ee;
       }
       #deck-container {
         width: 100vw;
-        height: 100vh;  
+        height: 100vh;
       }
       #deck-container canvas {
         z-index: 1;
@@ -78,9 +98,8 @@ b"@font-face {\n  font-family: 'Roboto';\n  font-style: normal;\n  font-weight: 
             font-family: Roboto;
             font-weight: 300;
             color: #ffffff !important;
-            background-color: #000000ee !important;
+            background-color: #000000aa !important;
             border-radius: 12px;
-            backdrop-filter: blur(6px);
             box-shadow: 2px 3px 10px #00000044;
             max-width: 25%;
       }
@@ -90,13 +109,94 @@ b"@font-face {\n  font-family: 'Roboto';\n  font-style: normal;\n  font-weight: 
         border-radius: 8px;
         color: #ffffff;
         background: #000000dd;
-        border: 2px inset #77777744;
+        border: 1px solid 222222ff;
         transition: 0.5s;
         outline: none;
-        box-sizing: border-box;
       }
       input:focus {
-        border: 2px inset #555;
+        border: 2px solid #555;
+      }
+      #loading {
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        position: absolute;
+        display: block;
+        z-index: 99
+      }
+      #loading-image {
+        position: absolute;
+        top: 45%;
+        left: 47.5%;
+        z-index: 100
+      }
+      #title-container {
+        /* position: absolute; */
+        top: 0;
+        left: 0;
+      }
+      .content-wrapper {
+        /* position: relative; */
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        padding: 8px;
+        /* Use grid to create the basic layout */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        min-height: calc(100vh - 16px); /* Account for padding */
+        pointer-events: none; /* pass pointer events through */
+      }
+      .stack {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        padding: 4px;
+        pointer-events: auto; /* allow pointer events */
+        max-height: 50vh;
+        overflow-y: visible;
+      }
+      .top-left {
+        grid-column: 1;
+        grid-row: 1;
+        justify-self: start;
+        align-self: start;
+      }
+      .bottom-left {
+        grid-column: 1;
+        grid-row: 2;
+        justify-self: start;
+        align-self: end;
+        display: flex;
+        flex-direction: column-reverse;
+        transform: scaleY(-1);
+      }
+
+      .top-right {
+        grid-column: 2;
+        grid-row: 1;
+        justify-self: end;
+        align-self: start;
+      }
+      .bottom-right {
+        grid-column: 2;
+        grid-row: 2;
+        justify-self: end;
+        align-self: end;
+        display: flex;
+        flex-direction: column-reverse;
+        transform: scaleY(-1);
+      }
+      .stack.bottom-left .stack-box {
+        transform: scaleY(-1);
+      }
+      .stack.bottom-right .stack-box {
+        transform: scaleY(-1);
       }
       #search-container{
         width: fit-content;
@@ -123,47 +223,46 @@ b"@font-face {\n  font-family: 'Roboto';\n  font-style: normal;\n  font-weight: 
             <input autocomplete="off" type="search" id="text-search" placeholder="🔍" />
           </div>
           
-          
         </div>
         <div class="stack top-right">
           
         </div>
         <div class="stack bottom-right">
+          
         </div>
         <div class="stack bottom-left"></div>
       </div>
-      
-    </div>
-    <div id="progress-container" class="datamapplot-progress-container container-box" style="width: 500px; position: absolute;">
-      <div id="point-data-progress" class="datamapplot-progress-bar">
-        <span class="datamapplot-progress-bar-fill" style="width: 0%;">
-          <span class="datamapplot-progress-bar-text">Point Data: 0%</span>
-        </span>
-      </div>
-      <div id="label-data-progress" class="datamapplot-progress-bar">
-        <span class="datamapplot-progress-bar-fill" style="width: 0%;">
-          <span class="datamapplot-progress-bar-text">Label Data: 0%</span>
-        </span>
-      </div>
-      <div id="meta-data-progress" class="datamapplot-progress-bar">
-        <span class="datamapplot-progress-bar-fill" style="width: 0%;">
-          <span class="datamapplot-progress-bar-text">Meta Data: 0%</span>
-        </span>
+      <div id="progress-container" class="datamapplot-progress-container container-box">
+        <div id="point-data-progress" class="datamapplot-progress-bar">
+          <span class="datamapplot-progress-bar-fill" style="width: 0%;">
+            <span class="datamapplot-progress-bar-text">Point Data: 0%</span>
+          </span>
+        </div>
+        <div id="label-data-progress" class="datamapplot-progress-bar">
+          <span class="datamapplot-progress-bar-fill" style="width: 0%;">
+            <span class="datamapplot-progress-bar-text">Label Data: 0%</span>
+          </span>
+        </div>
+        <div id="meta-data-progress" class="datamapplot-progress-bar">
+          <span class="datamapplot-progress-bar-fill" style="width: 0%;">
+            <span class="datamapplot-progress-bar-text">Meta Data: 0%</span>
+          </span>
+        </div>
       </div>
     </div>
     </body>
   <script>
-    LAYER_ORDER=['imageLayer','dataPointLayer','boundaryLayer','labelLayer'];function getLayerIndex(object){return LAYER_ORDER.indexOf(object.id);}
+    LAYER_ORDER=['imageLayer','dataPointLayer','boundaryLayer','LabelLayer'];function getLayerIndex(object){return LAYER_ORDER.indexOf(object.id);}
 function isFontLoaded(fontName){return document.fonts.check(`12px "${fontName}"`);}
 function waitForFont(fontName,maxWait=500){return new Promise((resolve,reject)=>{if(isFontLoaded(fontName)){resolve();}else{const startTime=Date.now();const interval=setInterval(()=>{if(isFontLoaded(fontName)){clearInterval(interval);resolve();}else if(Date.now()-startTime>maxWait){clearInterval(interval);reject(new Error(`Font ${fontName} did not load within ${maxWait}ms`));}},50);}});}
 function getInitialViewportSize(){const width=document.documentElement.clientWidth;const height=document.documentElement.clientHeight;return{viewportWidth:width,viewportHeight:height};}
 function calculateZoomLevel(bounds,viewportWidth,viewportHeight,padding=0.5){const lngRange=bounds[1]-bounds[0];const latRange=bounds[3]-bounds[2];const centerLng=(bounds[0]+bounds[1])/2;const centerLat=(bounds[2]+bounds[3])/2;const zoomX=Math.log2(360/(lngRange/(viewportWidth/256)));const zoomY=Math.log2(180/(latRange/(viewportHeight/256)));const zoom=Math.min(zoomX,zoomY)-padding;return{zoomLevel:zoom,dataCenter:[centerLng,centerLat]};}
-class DataMap{constructor({container,bounds,searchItemId="text-search",lassoSelectionItemId="lasso-selection",}){this.container=container;this.searchItemId=searchItemId;this.lassoSelectionItemId=lassoSelectionItemId;this.pointData=null;this.labelData=null;this.metaData=null;this.layers=[];const{viewportWidth,viewportHeight}=getInitialViewportSize();const{zoomLevel,dataCenter}=calculateZoomLevel(bounds,viewportWidth,viewportHeight);this.deckgl=new deck.DeckGL({container:container,initialViewState:{latitude:dataCenter[1],longitude:dataCenter[0],zoom:zoomLevel},controller:{scrollZoom:{speed:0.01,smooth:true}},});this.updateTriggerCounter=0;this.dataSelectionManager=new DataSelectionManager(lassoSelectionItemId);}
+class DataMap{constructor({container,bounds,searchItemId="text-search",lassoSelectionItemId="lasso-selection",}){this.container=container;this.searchItemId=searchItemId;this.lassoSelectionItemId=lassoSelectionItemId;this.pointData=null;this.metaData=null;this.layers=[];const{viewportWidth,viewportHeight}=getInitialViewportSize();const{zoomLevel,dataCenter}=calculateZoomLevel(bounds,viewportWidth,viewportHeight);this.deckgl=new deck.DeckGL({container:container,initialViewState:{latitude:dataCenter[1],longitude:dataCenter[0],zoom:zoomLevel},controller:{scrollZoom:{speed:0.01,smooth:true}},});this.updateTriggerCounter=0;this.dataSelectionManager=new DataSelectionManager(lassoSelectionItemId);}
 addPoints(pointData,{pointSize,pointOutlineColor=[250,250,250,128],pointLineWidth=0.001,pointHoverColor=[170,0,0,187],pointLineWidthMaxPixels=3,pointLineWidthMinPixels=0.001,pointRadiusMaxPixels=16,pointRadiusMinPixels=0.2,}){const numPoints=pointData.x.length;const positions=new Float32Array(numPoints*2);const colors=new Uint8Array(numPoints*4);const variableSize=pointSize<0;let sizes;if(variableSize){sizes=new Float32Array(numPoints);}else{sizes=null;}
 for(let i=0;i<numPoints;i++){positions[i*2]=pointData.x[i];positions[i*2+1]=pointData.y[i];colors[i*4]=pointData.r[i];colors[i*4+1]=pointData.g[i];colors[i*4+2]=pointData.b[i];colors[i*4+3]=pointData.a[i];if(variableSize){sizes[i]=pointData.size[i];}}
 this.originalColors=colors;this.selected=new Float32Array(numPoints).fill(1.0);this.pointSize=pointSize;this.pointOutlineColor=pointOutlineColor;this.pointLineWidth=pointLineWidth;this.pointHoverColor=pointHoverColor;this.pointLineWidthMaxPixels=pointLineWidthMaxPixels;this.pointLineWidthMinPixels=pointLineWidthMinPixels;this.pointRadiusMaxPixels=pointRadiusMaxPixels;this.pointRadiusMinPixels=pointRadiusMinPixels;let scatterAttributes={getPosition:{value:positions,size:2},getFillColor:{value:colors,size:4},getFilterValue:{value:this.selected,size:1}};if(variableSize){scatterAttributes.getRadius={value:sizes,size:1};}
 this.pointLayer=new deck.ScatterplotLayer({id:'dataPointLayer',data:{length:numPoints,attributes:scatterAttributes},getRadius:this.pointSize,getLineColor:this.pointOutlineColor,getLineWidth:this.pointLineWidth,highlightColor:this.pointHoverColor,lineWidthMaxPixels:this.pointLineWidthMaxPixels,lineWidthMinPixels:this.pointLineWidthMinPixels,radiusMaxPixels:this.pointRadiusMaxPixels,radiusMinPixels:this.pointRadiusMinPixels,radiusUnits:"common",lineWidthUnits:"common",autoHighlight:true,pickable:true,stroked:true,extensions:[new deck.DataFilterExtension({filterSize:1})],filterRange:[-0.5,1.5],filterSoftRange:[0.75,1.25],updateTriggers:{getFilterValue:this.updateTriggerCounter},instanceCount:numPoints,parameters:{depthTest:false}});this.layers.push(this.pointLayer);this.layers.sort((a,b)=>getLayerIndex(a)-getLayerIndex(b));this.deckgl.setProps({layers:[...this.layers]});}
-addLabels(labelData,{labelTextColor=d=>[d.r,d.g,d.b],textMinPixelSize=18,textMaxPixelSize=36,textOutlineWidth=8,textOutlineColor=[238,238,238,221],textBackgroundColor=[255,255,255,64],fontFamily="Roboto",fontWeight=900,lineSpacing=0.95,textCollisionSizeScale=3.0,pickable=false,}){const numLabels=labelData.length;this.labelTextColor=labelTextColor;this.textMinPixelSize=textMinPixelSize;this.textMaxPixelSize=textMaxPixelSize;this.textOutlineWidth=textOutlineWidth;this.textOutlineColor=textOutlineColor;this.textBackgroundColor=textBackgroundColor;this.fontFamily=fontFamily;this.fontWeight=fontWeight;this.lineSpacing=lineSpacing;this.textCollisionSizeScale=textCollisionSizeScale;waitForFont(this.fontFamily);this.labelLayer=new deck.TextLayer({id:'labelLayer',data:labelData,pickable:pickable,getPosition:d=>[d.x,d.y],getText:d=>d.label,getColor:this.labelTextColor,getSize:d=>d.size,sizeScale:1,sizeMinPixels:this.textMinPixelSize,sizeMaxPixels:this.textMaxPixelSize,outlineWidth:this.textOutlineWidth,outlineColor:this.textOutlineColor,getBackgroundColor:this.textBackgroundColor,getBackgroundPadding:[15,15,15,15],background:true,characterSet:"auto",fontFamily:this.fontFamily,fontWeight:this.fontWeight,lineHeight:this.lineSpacing,fontSettings:{"sdf":true},getTextAnchor:"middle",getAlignmentBaseline:"center",lineHeight:0.95,elevation:100,collisionEnabled:true,getCollisionPriority:d=>d.size,collisionTestProps:{sizeScale:this.textCollisionSizeScale,sizeMaxPixels:this.textMaxPixelSize*2,sizeMinPixels:this.textMinPixelSize*2},extensions:[new deck.CollisionFilterExtension()],instanceCount:numLabels,parameters:{depthTest:false}});this.layers.push(this.labelLayer);this.layers.sort((a,b)=>getLayerIndex(a)-getLayerIndex(b));this.deckgl.setProps({layers:[...this.layers]});}
+addLabels(labelData,{labelTextColor=d=>[d.r,d.g,d.b],textMinPixelSize=18,textMaxPixelSize=36,textOutlineWidth=8,textOutlineColor=[238,238,238,221],textBackgroundColor=[255,255,255,64],fontFamily="Roboto",fontWeight=900,lineSpacing=0.95,textCollisionSizeScale=3.0,}){const numLabels=labelData.length;this.labelTextColor=labelTextColor;this.textMinPixelSize=textMinPixelSize;this.textMaxPixelSize=textMaxPixelSize;this.textOutlineWidth=textOutlineWidth;this.textOutlineColor=textOutlineColor;this.textBackgroundColor=textBackgroundColor;this.fontFamily=fontFamily;this.fontWeight=fontWeight;this.lineSpacing=lineSpacing;this.textCollisionSizeScale=textCollisionSizeScale;waitForFont(this.fontFamily);this.labelLayer=new deck.TextLayer({id:'LabelLayer',data:labelData,pickable:false,getPosition:d=>[d.x,d.y],getText:d=>d.label,getColor:this.labelTextColor,getSize:d=>d.size,sizeScale:1,sizeMinPixels:this.textMinPixelSize,sizeMaxPixels:this.textMaxPixelSize,outlineWidth:this.textOutlineWidth,outlineColor:this.textOutlineColor,getBackgroundColor:this.textBackgroundColor,getBackgroundPadding:[15,15,15,15],background:true,characterSet:"auto",fontFamily:this.fontFamily,fontWeight:this.fontWeight,lineHeight:this.lineSpacing,fontSettings:{"sdf":true},getTextAnchor:"middle",getAlignmentBaseline:"center",lineHeight:0.95,elevation:100,collisionEnabled:true,getCollisionPriority:d=>d.size,collisionTestProps:{sizeScale:this.textCollisionSizeScale,sizeMaxPixels:this.textMaxPixelSize*2,sizeMinPixels:this.textMinPixelSize*2},extensions:[new deck.CollisionFilterExtension()],instanceCount:numLabels,parameters:{depthTest:false}});this.layers.push(this.labelLayer);this.layers.sort((a,b)=>getLayerIndex(a)-getLayerIndex(b));this.deckgl.setProps({layers:[...this.layers]});}
 addBoundaries(boundaryData,{clusterBoundaryLineWidth=0.5}){const numBoundaries=boundaryData.length;this.clusterBoundaryLineWidth=clusterBoundaryLineWidth;this.boundaryLayer=new deck.PolygonLayer({id:'boundaryLayer',data:boundaryData,stroked:true,filled:false,getLineColor:d=>[d.r,d.g,d.b,d.a],getPolygon:d=>d.polygon,lineWidthUnits:"common",getLineWidth:d=>d.size*d.size,lineWidthScale:this.clusterBoundaryLineWidth*5e-5,lineJointRounded:true,lineWidthMaxPixels:4,lineWidthMinPixels:0.0,instanceCount:numBoundaries,parameters:{depthTest:false}});this.layers.push(this.boundaryLayer);this.layers.sort((a,b)=>getLayerIndex(a)-getLayerIndex(b));this.deckgl.setProps({layers:[...this.layers]});}
 addMetaData(metaData,{tooltipFunction=({index})=>this.metaData.hover_text[index],onClickFunction=null,searchField=null,}){this.metaData=metaData;this.tooltipFunction=tooltipFunction;this.onClickFunction=onClickFunction;this.searchField=searchField;if(this.metaData.hasOwnProperty('hover_text')){this.deckgl.setProps({getTooltip:this.tooltipFunction,});}
 if(this.onClickFunction){this.deckgl.setProps({onClick:this.onClickFunction,});}
@@ -187,8 +286,8 @@ if(this.selectionCallbacks&&this.selectionCallbacks[this.searchItemId]){const cu
 this.highlightPoints(this.searchItemId);}
 recolorPoints(colorData,fieldName){if(!this.hasOwnProperty(`${fieldName}Colors`)){const numPoints=colorData[`${fieldName}_r`].length;const colors=new Uint8Array(numPoints*4);for(let i=0;i<numPoints;i++){colors[i*4]=colorData[`${fieldName}_r`][i];colors[i*4+1]=colorData[`${fieldName}_g`][i];colors[i*4+2]=colorData[`${fieldName}_b`][i];colors[i*4+3]=colorData[`${fieldName}_a`][i];}
 this[`${fieldName}Colors`]=colors;}
-const updatedPointLayer=this.pointLayer.clone({data:{...this.pointLayer.props.data,attributes:{...this.pointLayer.props.data.attributes,getFillColor:{value:this[`${fieldName}Colors`],size:4}}},transitions:{getFillColor:{duration:1500,easing:d3.easeCubicInOut}}});this.updateTriggerCounter++;const idx=this.layers.indexOf(this.pointLayer);this.layers=[...this.layers.slice(0,idx),updatedPointLayer,...this.layers.slice(idx+1)];this.deckgl.setProps({layers:this.layers});this.pointLayer=updatedPointLayer;}
-resetPointColors(){const updatedPointLayer=this.pointLayer.clone({data:{...this.pointLayer.props.data,attributes:{...this.pointLayer.props.data.attributes,getFillColor:{value:this.originalColors,size:4}}},transitions:{getFillColor:{duration:1500,easing:d3.easeCubicInOut}}});this.updateTriggerCounter++;const idx=this.layers.indexOf(this.pointLayer);this.layers=[...this.layers.slice(0,idx),updatedPointLayer,...this.layers.slice(idx+1)];this.deckgl.setProps({layers:this.layers});this.pointLayer=updatedPointLayer;}}
+const updatedPointLayer=this.pointLayer.clone({data:{...this.pointLayer.props.data,attributes:{...this.pointLayer.props.data.attributes,getFillColor:{value:this[`${fieldName}Colors`],size:4}}}});this.updateTriggerCounter++;const idx=this.layers.indexOf(this.pointLayer);this.layers=[...this.layers.slice(0,idx),updatedPointLayer,...this.layers.slice(idx+1)];this.deckgl.setProps({layers:this.layers});this.pointLayer=updatedPointLayer;}
+resetPointColors(){const updatedPointLayer=this.pointLayer.clone({data:{...this.pointLayer.props.data,attributes:{...this.pointLayer.props.data.attributes,getFillColor:{value:this.originalColors,size:4}}}});this.updateTriggerCounter++;const idx=this.layers.indexOf(this.pointLayer);this.layers=[...this.layers.slice(0,idx),updatedPointLayer,...this.layers.slice(idx+1)];this.deckgl.setProps({layers:this.layers});this.pointLayer=updatedPointLayer;}}
   </script>
   <script>
     class DataSelectionManager{constructor(specialItem){this.excludeItem=specialItem;this.selectedIndicesByItem={};this.selectedIndicesCommon=new Set();this.selectedIndicesBasicCommon=new Set();}
@@ -205,14 +304,6 @@ this.selectedIndicesCommon=sets[0];for(let i=1;i<sets.length;i++){this.selectedI
 const otherSelectionItems=Object.keys(this.selectedIndicesByItem).filter(key=>key!==this.excludeItem);this.selectedIndicesBasicCommon=this.selectedIndicesByItem[otherSelectionItems[0]];for(let i=1;i<otherSelectionItems.length;i++){const otherSelection=this.selectedIndicesByItem[otherSelectionItems[i]];this.selectedIndicesBasicCommon=this.selectedIndicesBasicCommon.intersection(otherSelection);}}}
   </script>
   <script type="module">
-    function debounce(func, timeout = 250) {
-        let timer;
-        return (...args) => {
-            clearTimeout(timer);
-            timer = setTimeout(() => { func.apply(this, args); }, timeout);
-        };
-    }
-
     async function simpleArrowParser(arrow_bytes) {
       const table = await Arrow.tableFromIPC(arrow_bytes);
       const result = {};
@@ -241,9 +332,9 @@ const otherSelectionItems=Object.keys(this.selectedIndicesByItem).filter(key=>ke
     }
 
     
-    const pointDataEncoded = "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";
-    const hoverDataEncoded = "H4sIABKpiGkC/41WbY/jNBD+K9Z+uT3piu4OAYJvod031L0tbblDvAg5zqQxdeycX7pbEP+dmXGSprCg+9R6PB6Pn3nmmfx50bgD+N8iPMWLb8TPF0WqdBRbL7W5eCUurgyo6J3VSgS9szImD2RfOrXXdkd/t7qFEGXb9ev34IPGE3m18hDAH2REk3C1gIOuwCoQM/HOWY51vSjE/Hot3r4RK+mjePOGrDdgwUsjFjJKsfIuYiIUYw27ZHK4y5vFav2SnZ2rxNxozBOPdF6iL95xeTNf8f7d5kG8/er1a448d21ntKQkFPioazzE8U4p3aZWWrHVISQQhYri8nZb/JLq+vXXtF1Y6yKfodW30itXgQhKWsyZTd494rNF7Xwb+M4GWs4NEF7HPgutcgxRJ6uGYFcfUzaeHK+eIniLZ5tjBx4fueeQt1fL+4nXnX3Wa2WktoLKO/Fda9X807ZRGiyDITBPRRj3G3uIqunLuTm2pTPoQxdw9WVpYBLmx9vt/XJ2Na6JT45xkJETonqWMsCZzanU4u1T210rd2dO9xvxUNdU1olxJdUeqqll8o6pNfqkiLxnvjn5ieE9kvMs28IYoRxCi8khjlJU56myjwipDBCJ3me+Ybz0lWglYQgzD7Ka3PrsHZ967r/ufSbHhfbYP6JLpRnY7rqBcwuosXOy0Qvdds5zUPdIzMFmkRH6mvBW7V2LNxHf8Pbgkld5/yE2SHrM6ne8bBY6UFyHsxhFdaDWq+gqzLrie5G2AbCNGm6eZbHZis24HhnzMYHXOcpSHoGKWZE6NBqVAp2PrCbaYGI9Xa8TYstEP4XPgUV5xOtbbPOKuAyTHURNINzckoH9huYdC5PJs9v116CiEN79auzXXUJhFFIhOpz0O3cSGzasQZpZRP3EVIyRpfOjqKz1rokBy2+xDSg4Gx0S4Ny0aSThgNmBraS/DC8J2IApV8kMCi3DXshAAj4cKwIR5zzUnaX3MXHONxYo2th2xI2Ti7YH/HGeQd+g/GNqo418I6rwMCPuJdVEmsBVH+Cs+sIydXzFVTsTw2WGhAKeMho9wkSwSV8XXj4OfMGZluMu7lcPdijwwruudE+ZJrtA0PH00LFJZT9HdvgO1KMwXXp9yI5eds1KVjiPdGjJ8l3qjjFr/r1W3gVXR/H5l1+cG7Yg8xh4sDAGo5nmsO7hM+14nUp6Bf89rost/fk+4UD8I0NsEE7+Y2VHw5H+/wSllwJhAkM5UUuGbLeucgMYQqboUmec5K6rnUGsxaOMp/4SCK85Bh3Ytx1pWIwrUQNP/ynqRdeNcoLP2XnZtlRDnkW1pAlcrO5e5ifF5v9CfmKoacl7yg8Mn5VO+qqfecMgxlCkRVP6RIeYT+JwUZmPHjr6WrGn0b4GEryxr0GlyCL86Py+Nu4xm8mHzCeJHFYfej/sz45eOrn2oQMrNqydtPzBBtrH8iycfRHF3uKpcYVQ8MvmxgXs9tOxOeq+R+1A48EpWeLYzh35AUpR9l8hCGkFYR9dx7R0pcYnIODP+LV5k9qX3hAHdRtkMst+rsd8mUuLSaVqmBeqcVoNn4jSmGNfBfrs8y+CYOeRdQF7m8a8cf/6BJsn3Gx1YLwTpTdenaXB7hIezWMbiZDHSUjmVL3c+OKQd4epOG7nU7OQiHoIIAqW5s/WX//6G4DNG6UXCwAA";
-    const labelDataEncoded = "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";
+    const pointDataEncoded = "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";
+    const hoverDataEncoded = "H4sIAOitiGkC/41WbY/jNBD+K9Z+uT3piu4OAYJvod031L0tbblDvAg5zqQxdeycX7pbEP+dmXGSprCg+9R6PB6Pn3nmmfx50bgD+N8iPMWLb8TPF0WqdBRbL7W5eCUurgyo6J3VSgS9szImD2RfOrXXdkd/t7qFEGXb9ev34IPGE3m18hDAH2REk3C1gIOuwCoQM/HOWY51vSjE/Hot3r4RK+mjePOGrDdgwUsjFjJKsfIuYiIUYw27ZHK4y5vFav2SnZ2rxNxozBOPdF6iL95xeTNf8f7d5kG8/er1a448d21ntKQkFPioazzE8U4p3aZWWrHVISQQhYri8nZb/JLq+vXXtF1Y6yKfodW30itXgQhKWsyZTd494rNF7Xwb+M4GWs4NEF7HPgutcgxRJ6uGYFcfUzaeHK+eIniLZ5tjBx4fueeQt1fL+4nXnX3Wa2WktoLKO/Fda9X807ZRGiyDITBPRRj3G3uIqunLuTm2pTPoQxdw9WVpYBLmx9vt/XJ2Na6JT45xkJETonqWMsCZzanU4u1T210rd2dO9xvxUNdU1olxJdUeqqll8o6pNfqkiLxnvjn5ieE9kvMs28IYoRxCi8khjlJU56myjwipDBCJ3me+Ybz0lWglYQgzD7Ka3PrsHZ967r/ufSbHhfbYP6JLpRnY7rqBcwuosXOy0Qvdds5zUPdIzMFmkRH6mvBW7V2LNxHf8Pbgkld5/yE2SHrM6ne8bBY6UFyHsxhFdaDWq+gqzLrie5G2AbCNGm6eZbHZis24HhnzMYHXOcpSHoGKWZE6NBqVAp2PrCbaYGI9Xa8TYstEP4XPgUV5xOtbbPOKuAyTHURNINzckoH9huYdC5PJs9v116CiEN79auzXXUJhFFIhOpz0O3cSGzasQZpZRP3EVIyRpfOjqKz1rokBy2+xDSg4Gx0S4Ny0aSThgNmBraS/DC8J2IApV8kMCi3DXshAAj4cKwIR5zzUnaX3MXHONxYo2th2xI2Ti7YH/HGeQd+g/GNqo418I6rwMCPuJdVEmsBVH+Cs+sIydXzFVTsTw2WGhAKeMho9wkSwSV8XXj4OfMGZluMu7lcPdijwwruudE+ZJrtA0PH00LFJZT9HdvgO1KMwXXp9yI5eds1KVjiPdGjJ8l3qjjFr/r1W3gVXR/H5l1+cG7Yg8xh4sDAGo5nmsO7hM+14nUp6Bf89rost/fk+4UD8I0NsEE7+Y2VHw5H+/wSllwJhAkM5UUuGbLeucgMYQqboUmec5K6rnUGsxaOMp/4SCK85Bh3Ytx1pWIwrUQNP/ynqRdeNcoLP2XnZtlRDnkW1pAlcrO5e5ifF5v9CfmKoacl7yg8Mn5VO+qqfecMgxlCkRVP6RIeYT+JwUZmPHjr6WrGn0b4GEryxr0GlyCL86Py+Nu4xm8mHzCeJHFYfej/sz45eOrn2oQMrNqydtPzBBtrH8iycfRHF3uKpcYVQ8MvmxgXs9tOxOeq+R+1A48EpWeLYzh35AUpR9l8hCGkFYR9dx7R0pcYnIODP+LV5k9qX3hAHdRtkMst+rsd8mUuLSaVqmBeqcVoNn4jSmGNfBfrs8y+CYOeRdQF7m8a8cf/6BJsn3Gx1YLwTpTdenaXB7hIezWMbiZDHSUjmVL3c+OKQd4epOG7nU7OQiHoIIAqW5s/WX//6G4DNG6UXCwAA";
+    const labelDataEncoded = "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";
     const histogramBinDataEncoded = "None";
     const histogramIndexDataEncoded = "None";
     
@@ -309,7 +400,7 @@ const otherSelectionItems=Object.keys(this.selectedIndicesByItem).filter(key=>ke
 
     const datamap = new DataMap({
       container: container,
-      bounds: [-13.680124093713541, 16.31987590628646, -18.041834046020423, 11.103558012913771],
+      bounds: [-1.6895631543410357, 1.6895631543410357, -1.6152041940853137, 1.6676611753546209],
       searchItemId: searchItemId,
       lassoSelectionItemId: selectionItemId,      
     });
@@ -344,7 +435,7 @@ const otherSelectionItems=Object.keys(this.selectedIndicesByItem).filter(key=>ke
           datamap.addPoints(
             pointData,
             {
-              pointSize: 0.11827843500946573,
+              pointSize: 0.1,
               pointOutlineColor: [5, 5, 5, 128],
               pointLineWidth: 0.001,
               pointHoverColor: [170, 0, 0, 187],
@@ -372,8 +463,6 @@ const otherSelectionItems=Object.keys(this.selectedIndicesByItem).filter(key=>ke
         } else {
           const { data } = event.data;
           const labelData = data;
-          datamap.labelData = labelData;
-          // Only build labels where we have a position.
           datamap.addLabels(labelData, {
             labelTextColor: [255, 255, 255, 255],
             textMinPixelSize: 18,
@@ -385,10 +474,8 @@ const otherSelectionItems=Object.keys(this.selectedIndicesByItem).filter(key=>ke
             fontWeight: 600,
             lineSpacing: 0.95,
             textCollisionSizeScale: 3,
-            pickable: false,
           });
 
-          
           
           document.getElementById("loading").style.display = "none";
           updateProgressBar('label-data-progress', 100);
@@ -413,6 +500,14 @@ const otherSelectionItems=Object.keys(this.selectedIndicesByItem).filter(key=>ke
           });
 
           
+          function debounce(func, timeout = 250){
+              let timer;
+              return (...args) => {
+                  clearTimeout(timer);
+                  timer = setTimeout(() => { func.apply(this, args); }, timeout);
+              };
+          }
+
           /* Search */
           searchItem.addEventListener("input", debounce(event => datamap.searchText(event.target.value)));
           updateProgressBar('meta-data-progress', 100);
