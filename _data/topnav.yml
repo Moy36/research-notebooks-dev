@@ -6,7 +6,7 @@ subitems:
 - title: About
   url: /about
 - title: ERN Requirments
-  url: /ERN Requirments
+  url: /ern_requirements
   #subitems:
   #- title: Functional Requirments (FRs)
     #url: /events
