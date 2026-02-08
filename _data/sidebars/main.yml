@@ -4,9 +4,9 @@
 subitems:
   - title: About
     subitems:
-      - title: About this Project
+      - title: About This Project
         url: /about
-      - title: The Team
+      - title: About Team
         url: /elixir_resources
       - title: News
         url: /accessibility
