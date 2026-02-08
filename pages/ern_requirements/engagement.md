@@ -6,7 +6,7 @@ permalink: /engagement
 ---
 
 {% for plot in site.data.stakeholder-mapplots %}
-## {{ plot }} Contribution
+## {{ plot }}
 
 <iframe 
     src="/research-notebooks-dev/assets/stakeholder-mapplots/{{ plot }}.html"
