@@ -19,14 +19,13 @@ columns:
     content: |
       This is a multiline \
       example test snippet.
+  #- type: image
+    #image_width: 300px
+    #width: 6
+    #src: 'assets/img/RLP logo.svg'
+    #alt: RLP logo
   - type: image
     image_width: 300px
     width: 6
-    src: 'assets/img/RLP logo.svg'
+    src: 'assets/img/RLP logo.sv'
     alt: RLP logo
-  #- type: image
-    #image_width: 88px
-    #width: 2
-    #src: 'assets/img/ett_compact_logo.svg'
-    #alt: Jekyll Bootstrap theme logo
-
