@@ -27,5 +27,5 @@ columns:
   - type: image
     image_width: 100px
     width: 2
-    src: 'assets/img/RLP logo.sv'
+    src: 'assets/img/RLP logo.svg'
     alt: RLP logo
