@@ -9,7 +9,7 @@ This page lists the attribute definitions used in the Research Notebooks project
 
 ## Main FRs Score Plot
 <iframe
-  src="/Functional Requirements.html"
+  src="/assets/functional-requirement.html"
   width="100%"
   height="900"
   style="border: none;"
