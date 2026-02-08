@@ -7,6 +7,9 @@ permalink: /ern-attributes
 
 This page lists the attribute definitions used in the Research Notebooks project.
 
+## Main FRs Score Plot
+{% include main_datamap.html %}
+
 ## Attribute List
 
 
