@@ -22,7 +22,7 @@ columns:
   - type: image
     image_width: 100px
     width: 2
-    src: 'assets/img/Bee logo.svg'
+    src: 'assets/img/Bee-logo.svg'
     alt: Bee logo
   - type: image
     image_width: 100px
