@@ -10,13 +10,7 @@ This page lists the attribute definitions used in the Research Notebooks project
 ## Attribute List
 
 
-<table class="ern-table">
-  <colgroup>
-    <col style="width: 10%;">
-    <col style="width: 25%;">
-    <col style="width: 65%;">
-  </colgroup>
-
+<table>
   {% for row in site.data.ERNAttributeDefinition %}
     {% if forloop.first %}
     <tr>
