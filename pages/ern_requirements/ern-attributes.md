@@ -8,7 +8,12 @@ permalink: /ern-attributes
 This page lists the attribute definitions used in the Research Notebooks project.
 
 ## Main FRs Score Plot
-{% include main_datamap.html %}
+<iframe
+  src="/assets/Functional%20Requirements.html"
+  width="100%"
+  height="900"
+  style="border: none;"
+></iframe>
 
 ## Attribute List
 
