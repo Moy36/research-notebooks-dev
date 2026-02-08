@@ -5,6 +5,8 @@ sidebar: main
 permalink: /engagement
 ---
 
+This page shows each stakeholder engagement in the Research Notebooks project.
+
 {% for plot in site.data.stakeholder-mapplots %}
 ## {{ plot }}
 
