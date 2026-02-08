@@ -18,7 +18,13 @@ This page lists the attribute definitions used in the Research Notebooks project
 ## Attribute Table
 
 
-<table>
+<table class="attr-table">
+  <colgroup>
+    <col style="width: 15%;">
+    <col style="width: 25%;">
+    <col style="width: 60%;">
+  </colgroup>
+
   {% for row in site.data.ERNAttributeDefinition %}
     {% if forloop.first %}
     <tr>
@@ -33,3 +39,4 @@ This page lists the attribute definitions used in the Research Notebooks project
     {% endtablerow %}
   {% endfor %}
 </table>
+
