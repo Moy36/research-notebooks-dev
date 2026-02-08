@@ -9,7 +9,7 @@ sidebar: false
 
 Homepage for [oiseau-lab](https://github.com/oiseau-lab)'s GitHub Pages of the [research-notebooks repository](https://github.com/oiseau-lab/research-notebooks).
 
-# Credit
+## Credit
 The basis of the notebook attributes is the [ELN Finder](https://eln-finder.ulb.tu-darmstadt.de/home)'s [metadata schema v1.0](https://doi.org/10.4126/FRL01-006452815), which is kindly made available by [CC BY 4.0 licence](https://creativecommons.org/licenses/by/4.0/).
 
 Following the [Contributor Role Taxonomy](https://credit.niso.org/), Qingy Mao, [@Moy36](https://github.com/Moy36), was predominantly responsible for the data curation, formal analysis and development of this software, while James R.T. Bird, [@jamesbird58](https://github.com/jamesbird58), was responsible for the conceptualization, methodology, supervision and some software development.
