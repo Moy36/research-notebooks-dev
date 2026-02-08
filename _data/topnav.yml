@@ -6,12 +6,12 @@ subitems:
 - title: About
   url: /about
 - title: ERN Requirment
-  subitems:
-  - title: Functional Requirments (FRs)
-    url: /events
-  - title: FRs Engagements
-    url: /news
-  - hr: true
-  - title: Non-Functional Requirments (NFRs)
-    url: /contributors
+  #subitems:
+  #- title: Functional Requirments (FRs)
+    #url: /events
+  #- title: FRs Engagements
+    #url: /news
+  #- hr: true
+  #- title: Non-Functional Requirments (NFRs)
+    #url: /contributors
     
