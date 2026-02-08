@@ -10,7 +10,7 @@ subitems:
         url: /elixir_resources
       - title: News
         url: /accessibility
-  - title: ERN Requirments
+  - title: ERN Requirment
     subitems:
       - title: Functional Requirments (FRs)
         url: /ern-attributes
