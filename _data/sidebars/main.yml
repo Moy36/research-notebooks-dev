@@ -1,0 +1,64 @@
+# title: About
+# version: 2.0
+# title_url:  /events
+subitems:
+  - title: About
+    subitems:
+      - title: About this Project
+        url: /about
+      - title: The Team
+        url: /elixir_resources
+      - title: News
+        url: /accessibility
+  - title: ERN Requirments
+    subitems:
+      - title: Functional Requirments (FRs)
+        url: /ern-attributes
+      - title: FRs Engagements
+        url: /markdown_cheat_sheet
+      - title: Non-Functional Requirments (NFRs)
+        url: /navigation_structures
+      #- title: Configuring the theme
+        #url: /configuring_theme
+      #- title: Page mechanics
+        #url: /page_mechanics
+      #- title: Custom branding
+        #url: /custom_branding
+      #- title: Website sections
+        #url: /website_sections
+      #- title: Tools and resources table
+        #url: /resource_table
+  #- title: ER Requirements
+    #subitems:
+      #- title: Functional Requirment
+        #url: /contributors
+      #- title: Events
+        #url: /events
+      #- title: News
+        #url: /news
+      #- title: Logo page
+        #url: /logo_page
+      #- title: Section overview
+        #url: /overview_tiles
+        #subitems:
+          #- title: General page
+            #url: /general_page
+          #- title: General page 2
+            #url: /general_page_2
+          #- title: General page 3
+            #url: /general_page_3
+          #- title: General page 4
+            #url: /general_page_4
+         # - title: General page 5
+            #url: /general_page_5
+          #- title: General page 6
+            #url: /general_page_6
+          #- title: General page 7
+            #url: /general_page_7
+      #- title: All trainings
+        #url: /all_trainings
+      #- title: List of page IDs
+        #url: /list_page_ids
+
+    hr: true
+  
