@@ -24,4 +24,4 @@ Following the [Contributor Role Taxonomy](https://credit.niso.org/), Qingy Mao, 
 > Cloning or forking this repository, without modification, and activating Pages (i.e. automatically defining a sequence of Github Actions) will deploy the site. Like other Jekyll sites, to deploy the site locally, you can do so with Ruby using gems :gem: and bundler as detailed [here](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll). :link: 
 
 > [!WARNING]
-> For MacOS :computer: users: it is advisable to use [rbenv](https://github
+> For MacOS :computer: users: it is advisable to use [rbenv](https://github.com/rbenv/rbenv) to manage your Ruby versions, as detailed [here](https://dev.to/luizgadao/easy-way-to-change-ruby-version-in-mac-m1-m2-and-m3-16hl).
