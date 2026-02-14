@@ -7,9 +7,8 @@ permalink: /engagement
 
 This page shows each stakeholder engagement in the Research Notebooks project.
 
-{% assign filtered = site.data.stakeholder-mapplots | where_exp: "p", "p[0] == 'A' or p[0] == 'B'" %}
-
-{% for plot in filtered %}
+{% for plot in site.data.stakeholder-mapplots %}
+  {% if plot startswith "A" or plot startswith "B" %}
 
 ## {{ plot }}
 
@@ -18,7 +17,9 @@ This page shows each stakeholder engagement in the Research Notebooks project.
 
 ---
 
+  {% endif %}
 {% endfor %}
+
 
 
 
