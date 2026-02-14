@@ -15,7 +15,7 @@ subitems:
       - title: Functional Requirments (FRs)
         url: /ern-attributes
       - title: FRs Engagements
-        url: /engagementab
+        url: /engagement
       - title: Non-Functional Requirments (NFRs)
         url: /navigation_structures
       #- title: Configuring the theme
