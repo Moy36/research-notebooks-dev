@@ -2,7 +2,7 @@
 title: Stakeholder Engagements C
 layout: page
 sidebar: main
-permalink: /engagementc
+permalink: /engagement-c
 ---
 
 This page shows each stakeholder engagement in the Research Notebooks project.
