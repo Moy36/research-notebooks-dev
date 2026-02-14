@@ -6,16 +6,20 @@ permalink: /engagement
 ---
 
 This page shows each stakeholder engagement in the Research Notebooks project.
-{% for plot in site.data.stakeholder-mapplots %} 
 
-## {{ plot }} 
+{% assign filtered = site.data.stakeholder-mapplots | where_exp: "p", "p[0] == 'A' or p[0] == 'B'" %}
 
-<iframe src="/research-notebooks-dev/assets/stakeholder-mapplots/{{ plot }}.html" 
-  width="100%" height="500" style="border:none;"> </iframe> 
+{% for plot in filtered %}
 
---- 
+## {{ plot }}
+
+<iframe src="/research-notebooks-dev/assets/stakeholder-mapplots/{{ plot }}.html"
+  width="100%" height="500" style="border:none;"></iframe>
+
+---
 
 {% endfor %}
+
 
 
 
