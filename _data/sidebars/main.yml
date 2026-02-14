@@ -17,7 +17,7 @@ subitems:
       - title: FRs Engagements (A-B)
         url: /engagement
       - title: FRs Engagements (C)
-        url: /engagement-c
+        url: /engagementc
       - title: Non-Functional Requirments (NFRs)
         url: /navigation_structures
       #- title: Configuring the theme
