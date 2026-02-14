@@ -8,7 +8,8 @@ permalink: /engagement
 This page shows each stakeholder engagement in the Research Notebooks project.
 
 {% for plot in site.data.stakeholder-mapplots %}
-  {% if plot[0] == "A" or plot[0] == "B" %}
+  {% assign first = plot | slice: 0, 1 %}
+  {% if first == "A" or first == "B" %}
 
 ## {{ plot }}
 
@@ -19,9 +20,6 @@ This page shows each stakeholder engagement in the Research Notebooks project.
 
   {% endif %}
 {% endfor %}
-
-
-
 
 
 
