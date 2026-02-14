@@ -2,7 +2,7 @@
 title: Stakeholder Engagements
 layout: page
 sidebar: main
-permalink: /engagementab
+permalink: /engagement
 ---
 
 This page shows each stakeholder engagement in the Research Notebooks project.
@@ -19,8 +19,6 @@ This page shows each stakeholder engagement in the Research Notebooks project.
     height="500"
     style="border:none;">
 </iframe>
-
----
 
   {% endif %}
 {% endfor %}
