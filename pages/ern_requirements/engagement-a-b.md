@@ -10,7 +10,7 @@ This page shows each stakeholder engagement in the Research Notebooks project.
 {% for plot in site.data.stakeholder-mapplots %}
   {% assign first_letter = plot | slice: 0, 1 | downcase %}
   {% if first_letter == "a" or first_letter == "b" %}
-  
+
 ## {{ plot }}
 
 <iframe 
@@ -21,5 +21,8 @@ This page shows each stakeholder engagement in the Research Notebooks project.
 </iframe>
 
 ---
+
+  {% endif %}
 {% endfor %}
+
 
