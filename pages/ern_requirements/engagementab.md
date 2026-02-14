@@ -2,12 +2,12 @@
 title: Stakeholder Engagements
 layout: page
 sidebar: main
-permalink: /engagement-a-b
+permalink: /engagementab
 ---
 
 This page shows each stakeholder engagement in the Research Notebooks project.
 
-{% for plot in site.data.stakeholder-mapplots %}
+{% for plot in site.data["stakeholder-mapplots"] %}
   {% assign first_letter = plot | slice: 0, 1 | downcase %}
   {% if first_letter == "a" or first_letter == "b" %}
 
@@ -24,5 +24,6 @@ This page shows each stakeholder engagement in the Research Notebooks project.
 
   {% endif %}
 {% endfor %}
+
 
 
