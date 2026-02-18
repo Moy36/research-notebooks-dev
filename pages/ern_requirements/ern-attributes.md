@@ -25,7 +25,7 @@ This page lists the attribute definitions used in the Research Notebooks project
     <col style="width: 60%;">
   </colgroup>
 
-  {% for row in site.data.ERNAttributeDefinition %}
+  {% for row in site.data.ERNAttributeDefinitionNew %}
     {% if forloop.first %}
     <tr>
       {% for pair in row %}
