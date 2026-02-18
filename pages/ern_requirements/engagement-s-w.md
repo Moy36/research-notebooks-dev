@@ -1,15 +1,15 @@
 ---
-title: Stakeholder Engagement (A-B)
+title: Stakeholder Engagement (S-W)
 layout: page
 sidebar: main
-permalink: /engagement
+permalink: /engagement-s-w
 ---
 
 This page shows each stakeholder engagement in the Research Notebooks project.
 
 {% for plot in site.data.stakeholder-mapplots %}
   {% assign first = plot | slice: 0, 1 %}
-  {% if first == "A" or first == "B" %}
+  {% if first == "S" or first == "T" or first == "U" or first == "V" or first == "W" %}
 
 ## {{ plot }}
 
@@ -20,8 +20,3 @@ This page shows each stakeholder engagement in the Research Notebooks project.
 
   {% endif %}
 {% endfor %}
-
-
-
-
-

@@ -16,6 +16,23 @@ subitems:
         url: /ern-attributes
       - title: FRs Engagements
         url: /engagement
+        subitems:
+          - title: Stakeholder A-B
+            url: /engagement
+          - title: Stakeholder C
+            url: /engagement-c
+          - title: Stakeholder D-F
+            url: /engagement-d-f
+          - title: Stakeholder G-I
+            url: /engagement-g-i
+          - title: Stakeholder J-L
+            url: /engagement-j-l
+          - title: Stakeholder M-O
+            url: /engagement-m-o
+          - title: Stakeholder P-R
+            url: /engagement-p-r
+          - title: Stakeholder S-W
+            url: /engagement-s-w
       - title: Non-Functional Requirments (NFRs)
         url: /navigation_structures
       #- title: Configuring the theme
